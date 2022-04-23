@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFGame"
+        mc:Ignorable="d"
+        Title="WPFGame" Height="450" Width="800">
+    <Canvas Name="MyCanvas" Focusable="True" KeyDown="KeyIsDown" KeyUp="KeyIsUp" Background="LightBlue">
+
+        <Rectangle Name="background" Height="453" Width="1262" Fill="Orange" Canvas.Left="-5" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Rectangle Name="background2" Height="453" Width="1262" Fill="LightGreen" Canvas.Left="1262" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <Rectangle Name="ground" Height="32" Width="792" Fill="Black" Canvas.Top="387" Canvas.Left="0" Visibility="Hidden" />
+
+        <Rectangle Name="player" Height="99" Width="67" Fill="Brown" Canvas.Top="151" Canvas.Left="110" />
+
+        <Rectangle Name="obstacle" Height="178" Width="50" Fill="Red" Canvas.Top="320" Canvas.Left="721" />
+
+        <Label Name="scoreText" FontSize="32" FontWeight="Bold" Content="Score: 0" />
+
+
+    </Canvas>
+</Window>
